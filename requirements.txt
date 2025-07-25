@@ -1,0 +1,33 @@
+# Core Web Framework
+fastapi[standard] # Includes uvicorn and other standard dependencies
+uvicorn # ASGI server
+
+# LangChain and LLM/Embedding Integrations
+langchain # General LangChain library
+langchain-core
+langchain-community 
+langchain-ollama # LangChain integration for Ollama LLMs
+langchain-chroma # LangChain integration for ChromaDB vector store
+
+# Vector Database
+chromadb
+
+# Database Connector
+pymongo 
+
+# Environment Variables
+python-dotenv # For loading .env files
+
+# Data Handling & Utility
+pydantic # Data validation and settings management (used by FastAPI/LangChain)
+scikit-learn # For TF-IDF and other machine learning utilities (like intent classification)
+Pillow # For image processing (if you're handling any images, e.g., product images)
+PyMuPDF # For PDF processing (if you're using it for the knowledge base)
+numpy # Often a dependency for ML libraries
+pandas # Useful for data manipulation, might be a dependency for some loaders
+tiktoken # Used by some LLMs for token counting
+
+# Development & Documentation (optional, but good practice)
+ruff # Linter
+black # Code formatter
+pytest # Testing framework
